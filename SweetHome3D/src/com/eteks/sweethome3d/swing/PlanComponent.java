@@ -2002,8 +2002,9 @@ public class PlanComponent extends JComponent implements PlanView, Scrollable, P
     }
     return strokeWidth;
   }
+
   /**
-   * prints the plan of each viewable level of home in the order of home levels
+   * Prints the plan of each viewable level of home in the order of home levels
    * at the scale given in the home print attributes or at a scale that makes it fill
    * <code>pageFormat</code> imageable size if this attribute is <code>null</code>.
    * The selected level and the selected items are restored once the page is printed.
@@ -2033,7 +2034,7 @@ public class PlanComponent extends JComponent implements PlanView, Scrollable, P
   }
 
   /**
-   * returns the viewable levels of home, in the order of home levels.
+   * Returns the viewable levels of home, in the order of home levels.
    */
   private List<Level> getViewableLevels() {
     List<Level> viewableLevels = new ArrayList<Level>();
@@ -2070,7 +2071,7 @@ public class PlanComponent extends JComponent implements PlanView, Scrollable, P
     }
   }
   /**
-   * Prints this component plan at the scale given in the home print attributes or at a scale 
+   * Prints the plan of the selected level at the scale given in the home print attributes or at a scale
    * that makes it fill <code>pageFormat</code> imageable size if this attribute is <code>null</code>.
    */
   private int printSelectedLevel(Graphics g, PageFormat pageFormat, int pageIndex) {
